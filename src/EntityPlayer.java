@@ -44,7 +44,7 @@ public abstract class EntityPlayer extends EntityLiving {
 		this.yOffset = 1.62F;
 		ChunkCoordinates var2 = var1.getSpawnPoint();
 		this.setLocationAndAngles((double)var2.x + 0.5D, (double)(var2.y + 1), (double)var2.z + 0.5D, 0.0F, 0.0F);
-		this.health = 20;
+		this.health = 40;
 		this.field_9351_C = "humanoid";
 		this.field_9353_B = 180.0F;
 		this.fireResistance = 20;
@@ -151,7 +151,7 @@ public abstract class EntityPlayer extends EntityLiving {
 		this.yOffset = 1.62F;
 		this.setSize(0.6F, 1.8F);
 		super.preparePlayerToSpawn();
-		this.health = 20;
+		this.health = 40;
 		this.deathTime = 0;
 	}
 
