@@ -4,7 +4,8 @@ import java.util.Random;
 
 public class WorldGenTrees extends WorldGenerator {
 	public boolean generate(World var1, Random var2, int var3, int var4, int var5) {
-		int var6 = var2.nextInt(3) + 4;
+		//int var6 = var2.nextInt(3) + 4;				//var6 is the height of the trees (atleast I think)
+		int var6 = var2.nextInt(3) + 15;
 		boolean var7 = true;
 		if(var4 >= 1 && var4 + var6 + 1 <= 128) {
 			int var8;
