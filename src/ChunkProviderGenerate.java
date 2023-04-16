@@ -320,6 +320,16 @@ public class ChunkProviderGenerate implements IChunkProvider {
 		int var13;
 		int var14;
 		int var15;
+		int var69;
+		int var70;
+		if(this.rand.nextInt(16) == 0 && var6 == BiomeGenBase.orca){
+			var69 = var4 + this.rand.nextInt(16) + 8;
+			var70 = var5 + this.rand.nextInt(16) + 8;
+			WorldGenerator var71 = var6.getGenForOrca(this.rand);
+			var71.func_517_a(1.0D, 1.0D, 1.0D);
+			var71.generate(this.worldObj, this.rand, var69, this.worldObj.getHeightValue(var69, var70), var70);
+
+		}
 		if(this.rand.nextInt(4) == 0) {
 			var13 = var4 + this.rand.nextInt(16) + 8;
 			var14 = this.rand.nextInt(128);

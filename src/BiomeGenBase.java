@@ -19,7 +19,7 @@ public class BiomeGenBase {
 	public static final BiomeGenBase tundra = (new BiomeGenBase()).setColor(5762041).setBiomeName("Tundra").setEnableSnow().func_4124_a(12899129);
 	public static final BiomeGenBase hell = (new BiomeGenHell()).setColor(16711680).setBiomeName("Hell").setDisableRain();
 	public static final BiomeGenBase sky = (new BiomeGenSky()).setColor(8421631).setBiomeName("Sky").setDisableRain();
-	public static final BiomeGenBase orca = (new BiomeGenOrca()).setColor(16767248).setBiomeName("Orcaland");	
+	public static final BiomeGenBase orca = (new BiomeGenOrca()).setColor(16767248).setBiomeName("Orcaland").func_4124_a(9154376);	
 	public String biomeName;
 	public int color;
 	public byte topBlock = (byte)Block.grass.blockID;
@@ -61,8 +61,12 @@ public class BiomeGenBase {
 		iceDesert.topBlock = iceDesert.fillerBlock = (byte)Block.sand.blockID;
 	}
 
+	public WorldGenerator getGenForOrca(Random var1){
+		return null;
+	}
 	public WorldGenerator getRandomWorldGenForTrees(Random var1) {
-		return (WorldGenerator)(var1.nextInt(10) == 0 ? new WorldGenBigTree() : new WorldGenTrees());
+		//return (WorldGenerator)(var1.nextInt(10) == 0 ? new WorldGenBigTree() : new WorldGenTrees());
+		return (WorldGenerator) new WorldGenBigTree();
 	}
 
 	protected BiomeGenBase setEnableSnow() {
