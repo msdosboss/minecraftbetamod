@@ -118,6 +118,7 @@ public class Block {
 	public static final Block lockedChest = (new BlockLockedChest(95)).setHardness(0.0F).setLightValue(1.0F).setStepSound(soundWoodFootstep).setBlockName("lockedchest").setTickOnLoad(true).disableNeighborNotifyOnMetadataChange();
 	public static final Block trapdoor = (new BlockTrapDoor(96, Material.wood)).setHardness(3.0F).setStepSound(soundWoodFootstep).setBlockName("trapdoor").disableStats().disableNeighborNotifyOnMetadataChange();
 	public static final Block example = (new BlockExample(97, 1)).setHardness(1.5F).setResistance(10F).setStepSound(soundStoneFootstep);
+	public static final Block orca = (new BlockOrca(98, 137)).setHardness(1.5F).setResistance(10F).setStepSound(soundStoneFootstep);
 	public int blockIndexInTexture;
 	public final int blockID;
 	protected float blockHardness;
