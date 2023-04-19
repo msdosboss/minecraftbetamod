@@ -2,7 +2,7 @@ package net.minecraft.src;
 
 import java.util.Random;
 
-public class WorldGenTrees extends WorldGenerator {
+public class WorldGenEyeTrees extends WorldGenerator {
 	public boolean generate(World var1, Random var2, int var3, int var4, int var5) {
 		int var6 = var2.nextInt(3) + 4;				//var6 is the height of the trees (atleast I think)
 		//int var6 = var2.nextInt(3) + 15;
@@ -26,7 +26,7 @@ public class WorldGenTrees extends WorldGenerator {
 					for(var11 = var5 - var9; var11 <= var5 + var9 && var7; ++var11) {
 						if(var8 >= 0 && var8 < 128) {
 							var12 = var1.getBlockId(var10, var8, var11);
-							if(var12 != 0 && var12 != Block.leaves.blockID) {
+							if(var12 != 0 && var12 != Block.eyeleaves.blockID) {
 								var7 = false;
 							}
 						} else {
@@ -63,7 +63,7 @@ public class WorldGenTrees extends WorldGenerator {
 					for(var16 = 0; var16 < var6; ++var16) {
 						var10 = var1.getBlockId(var3, var4 + var16, var5);
 						if(var10 == 0 || var10 == Block.leaves.blockID) {
-							var1.setBlock(var3, var4 + var16, var5, Block.wood.blockID);
+							var1.setBlock(var3, var4 + var16, var5, Block.eyewood.blockID);
 						}
 					}
 

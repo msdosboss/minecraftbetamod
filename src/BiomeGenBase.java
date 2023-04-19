@@ -64,6 +64,11 @@ public class BiomeGenBase {
 	public WorldGenerator getGenForOrca(Random var1){
 		return null;
 	}
+
+	public WorldGenerator getGenForEyeTrees(Random var1){
+		return null;
+	}
+	
 	public WorldGenerator getRandomWorldGenForTrees(Random var1) {
 		//return (WorldGenerator)(var1.nextInt(10) == 0 ? new WorldGenBigTree() : new WorldGenTrees());
 		return (WorldGenerator) new WorldGenBigTree();

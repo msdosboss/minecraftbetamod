@@ -119,6 +119,9 @@ public class Block {
 	public static final Block trapdoor = (new BlockTrapDoor(96, Material.wood)).setHardness(3.0F).setStepSound(soundWoodFootstep).setBlockName("trapdoor").disableStats().disableNeighborNotifyOnMetadataChange();
 	public static final Block example = (new BlockExample(97, 1)).setHardness(1.5F).setResistance(10F).setStepSound(soundStoneFootstep);
 	public static final Block orca = (new BlockOrca(98, 137)).setHardness(1.5F).setResistance(10F).setStepSound(soundStoneFootstep);
+	public static final Block eyewood = (new BlockEyeLog(99)).setHardness(2.0F).setStepSound(soundWoodFootstep).setBlockName("eyelog").disableNeighborNotifyOnMetadataChange();
+	public static final BlockEyeLeaves eyeleaves = (BlockEyeLeaves)(new BlockEyeLeaves(100, 171)).setHardness(0.2F).setLightOpacity(1).setStepSound(soundGrassFootstep).setBlockName("eyeleaves").disableStats().disableNeighborNotifyOnMetadataChange();
+	public static final Block eyeplanks = (new Block(101, 173, Material.wood)).setHardness(2.0F).setResistance(5.0F).setStepSound(soundWoodFootstep).setBlockName("wood").disableNeighborNotifyOnMetadataChange();
 	public int blockIndexInTexture;
 	public final int blockID;
 	protected float blockHardness;

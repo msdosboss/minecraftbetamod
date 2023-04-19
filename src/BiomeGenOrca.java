@@ -13,4 +13,7 @@ public class BiomeGenOrca extends BiomeGenBase {
     public WorldGenerator getGenForOrca(Random var1){
         return (WorldGenerator)(new WorldGenOrca());
     }
+    public WorldGenerator getGenForEyeTrees(Random var1){
+        return (WorldGenerator)(new WorldGenEyeTrees());
+    }
 }
