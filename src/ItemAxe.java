@@ -1,7 +1,7 @@
 package net.minecraft.src;
 
 public class ItemAxe extends ItemTool {
-	private static Block[] blocksEffectiveAgainst = new Block[]{Block.eyeplanks, Block.eyewood, Block.workbench ,Block.planks, Block.bookShelf, Block.wood, Block.chest};
+	private static Block[] blocksEffectiveAgainst = new Block[]{Block.bluewood,Block.blueplanks,Block.eyeplanks, Block.eyewood, Block.workbench ,Block.planks, Block.bookShelf, Block.wood, Block.chest};
 
 	protected ItemAxe(int var1, EnumToolMaterial var2) {
 		super(var1, 3, var2, blocksEffectiveAgainst);

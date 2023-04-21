@@ -68,6 +68,9 @@ public class BiomeGenBase {
 	public WorldGenerator getGenForEyeTrees(Random var1){
 		return null;
 	}
+	public WorldGenerator getGenForBlueTrees(Random var1){
+		return null;
+	}
 	
 	public WorldGenerator getRandomWorldGenForTrees(Random var1) {
 		//return (WorldGenerator)(var1.nextInt(10) == 0 ? new WorldGenBigTree() : new WorldGenTrees());

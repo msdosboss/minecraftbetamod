@@ -122,6 +122,8 @@ public class Block {
 	public static final Block eyewood = (new BlockEyeLog(99)).setHardness(2.0F).setStepSound(soundWoodFootstep).setBlockName("eyelog").disableNeighborNotifyOnMetadataChange();
 	public static final BlockEyeLeaves eyeleaves = (BlockEyeLeaves)(new BlockEyeLeaves(100, 171)).setHardness(0.2F).setLightOpacity(1).setStepSound(soundGrassFootstep).setBlockName("eyeleaves").disableStats().disableNeighborNotifyOnMetadataChange();
 	public static final Block eyeplanks = (new Block(101, 173, Material.wood)).setHardness(2.0F).setResistance(5.0F).setStepSound(soundWoodFootstep).setBlockName("eyewood").disableNeighborNotifyOnMetadataChange();
+	public static final Block bluewood = (new BlockBlueLog(102)).setHardness(2.0F).setStepSound(soundWoodFootstep).setBlockName("bluelog").disableNeighborNotifyOnMetadataChange();
+	public static final Block blueplanks = (new Block(103, 125, Material.wood)).setHardness(2.0F).setResistance(5.0F).setStepSound(soundWoodFootstep).setBlockName("bluewood").disableNeighborNotifyOnMetadataChange(); //need to change texture value
 	public int blockIndexInTexture;
 	public final int blockID;
 	protected float blockHardness;

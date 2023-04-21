@@ -8,7 +8,7 @@ public class WorldGenOrca extends WorldGenerator {
             for(int var7 = var4; var7 <= var4 + 3; var7++){
                 for(int var8 = var5; var8 <= var5 + 4; var8++){
                     if((var7 == var4) && var6 != var3 && var6 != var3 + 4 && var8 != var5 && var8 != var5 + 4){
-                        var1.setBlock(var6, var7 - 1, var8, Block.eyeplanks.blockID);              //places the floor 
+                        var1.setBlock(var6, var7 - 1, var8, Block.blueplanks.blockID);              //places the floor 
                     }
                     if((var6 == var3 && var7 == var4 + 1 && var8 == var5 + 2) || (var6 == var3 + 2 && var7 == var4 + 1 && var8 == var5 + 4) || (var6 == var3 + 4 && var7 == var4 + 1 && var8 == var5 + 2)){
                         var1.setBlock(var6, var7, var8, Block.glass.blockID);        //places the windows 
@@ -27,7 +27,7 @@ public class WorldGenOrca extends WorldGenerator {
                     }
                     if((var6 == var3 + 2 && var7 == var4 && var8 == var5) || (var6 == var3 + 2 && var7 == var4 + 1 && var8 == var5)){
                         if(var7 == var4){
-                            var1.setBlock(var6, var7 - 1, var8, Block.eyeplanks.blockID);
+                            var1.setBlock(var6, var7 - 1, var8, Block.blueplanks.blockID);
                             
                         }
                         var1.setBlock(var6, var7, var8, Block.doorWood.blockID);
@@ -38,10 +38,10 @@ public class WorldGenOrca extends WorldGenerator {
                         continue;                       //empties out the center 
                     }
                     if((var6 == var3 && var8 == var5) || (var6 == var3 && var8 == var5 + 4) || (var6 == var3 + 4 && var8 == var5) || (var6 == var3 + 4 && var8 == var5 + 4)){
-                        var1.setBlock(var6, var7, var8, Block.eyewood.blockID);                    //does the conors
+                        var1.setBlock(var6, var7, var8, Block.bluewood.blockID);                    //does the conors
                         continue;
                     }
-                    var1.setBlock(var6, var7, var8, Block.eyeplanks.blockID);                  //does the walls
+                    var1.setBlock(var6, var7, var8, Block.blueplanks.blockID);                  //does the walls
                 }
             }
         }
